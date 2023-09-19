@@ -1,8 +1,11 @@
-package com.joel.lektion_3.me;
+package com.joel.lektion_3.models;
 
 public class Student {
     private String name;
-    private int age;
+    public int age;
+    public int doubleMyAge(int age){
+        return age * 2;
+    }
     private boolean hair;
     public Student(String name, int age, boolean hair) {
         this.name = name;
@@ -12,4 +15,6 @@ public class Student {
     public void print(){
         System.out.println(name + " is " + age + " years old, " + "has hair? " + hair);
     }
+
 }
+
